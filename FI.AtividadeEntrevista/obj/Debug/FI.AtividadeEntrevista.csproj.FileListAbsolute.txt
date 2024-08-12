@@ -1,0 +1,6 @@
+E:\Dev\TesteFS\FI.AtividadeEntrevista\bin\Debug\FI.AtividadeEntrevista.dll
+E:\Dev\TesteFS\FI.AtividadeEntrevista\bin\Debug\FI.AtividadeEntrevista.pdb
+E:\Dev\TesteFS\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.csproj.AssemblyReference.cache
+E:\Dev\TesteFS\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.csproj.CoreCompileInputs.cache
+E:\Dev\TesteFS\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.dll
+E:\Dev\TesteFS\FI.AtividadeEntrevista\obj\Debug\FI.AtividadeEntrevista.pdb
