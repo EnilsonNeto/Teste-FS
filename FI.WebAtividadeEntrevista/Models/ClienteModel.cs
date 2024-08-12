@@ -12,7 +12,7 @@ namespace WebAtividadeEntrevista.Models
     public class ClienteModel
     {
         public long Id { get; set; }
-        
+
         /// <summary>
         /// CEP
         /// </summary>
@@ -67,5 +67,11 @@ namespace WebAtividadeEntrevista.Models
         /// </summary>
         public string Telefone { get; set; }
 
-    }    
+        /// <summary>
+        /// CPF
+        /// </summary>
+        [Required(ErrorMessage = "CPF é obrigatório.")]
+        [StringLength(14, ErrorMessage = "O CPF deve ter entre 11 e 14 caracteres.", MinimumLength = 11)]
+        public string CPF { get; set; }
+    }
 }
