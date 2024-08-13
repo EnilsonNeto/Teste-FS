@@ -76,7 +76,20 @@ namespace WebAtividadeEntrevista.Controllers
         public JsonResult Alterar(ClienteModel model)
         {
             BoCliente bo = new BoCliente();
-       
+            CPFValidation cpfValidation = new CPFValidation();
+
+            if (bo.VerificarExistencia(model.CPF))
+            {
+                Response.StatusCode = 400;
+                return Json("Erro: CPF já cadastrado no sistema digite um CPF válido.");
+            }
+
+            if (!cpfValidation.ValidarCPF(model.CPF))
+            {
+                Response.StatusCode = 400;
+                return Json("Erro: CPF inválido.");
+            }
+
             if (!this.ModelState.IsValid)
             {
                 List<string> erros = (from item in ModelState.Values
