@@ -81,6 +81,13 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalCadastroBeneficiario">Cadastrar Beneficiário</button>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-lg-12">
@@ -91,5 +98,60 @@
         </div>
     </div>
 
-
 </form>
+
+@*Modal de formulario para beneficiarios.*@
+
+<div class="modal fade" id="modalCadastroBeneficiario" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"><b>Cadastrar Beneficiário</b></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formCadastroBeneficiario">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="cpfBeneficiario">CPF:</label>
+                                <input type="text" class="form-control" id="cpfBeneficiario" name="cpfBeneficiario" placeholder="Ex.: 000.000.000-00">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="nomeBeneficiario">Nome:</label>
+                                <input type="text" class="form-control" id="nomeBeneficiario" name="nomeBeneficiario" placeholder="Ex.: João da Silva">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button type="button" style="margin-top: 24px;" onclick="salvarBeneficiario()" class="btn btn-success">Incluir</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="row text-center" style="border-bottom: 1px solid #000000">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <h5><b>CPF</b><h5/>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <h5><b>Nome</b></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><b>Ações</b></h5>
+                    </div>
+                </div>
+                <div id="listaBeneficiarios"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

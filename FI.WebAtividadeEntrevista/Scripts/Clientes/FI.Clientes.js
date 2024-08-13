@@ -46,6 +46,47 @@ $(document).ready(function () {
     
 })
 
+    var contadorBeneficiarios = 1;
+    var beneficiarioEditandoId = null;
+
+function salvarBeneficiario() {
+    var cpf = $('#cpfBeneficiario').val();
+    var nome = $('#nomeBeneficiario').val();
+
+    if (beneficiarioEditandoId) {
+        $('#' + beneficiarioEditandoId).find('.cpf').text(cpf);
+        $('#' + beneficiarioEditandoId).find('.nome').text(nome);
+        beneficiarioEditandoId = null;
+    } else {
+        var itemId = 'beneficiario-' + contadorBeneficiarios;
+        contadorBeneficiarios++;
+        var itemLista = $('<div class="d-flex justify-content-between align-items-center p-2 border-bottom text-center" id="' + itemId + '"></div>');
+        itemLista.append($('<span class="col-md-4 cpf">' + cpf + '</span>'));
+        itemLista.append($('<span class="col-md-4 nome">' + nome + '</span>'));
+        itemLista.append($('<div class="d-flex col-md-4 align-items-center justify-content-center text-center"><button class="btn btn-primary btn-sm me-3" onclick="alterarBeneficiario(\'' + itemId + '\')">Alterar</button><button class="btn btn-primary btn-sm" onclick="excluirBeneficiario(\'' + itemId + '\')">Excluir</button></div>'));
+
+        $('#listaBeneficiarios').append(itemLista);
+    }
+    $('#cpfBeneficiario').val('');
+    $('#nomeBeneficiario').val('');
+    $('#modalCadastroBeneficiario').modal('refresh');
+}
+
+function alterarBeneficiario(itemId) {
+    beneficiarioEditandoId = itemId;
+    var cpf = $('#' + itemId).find('.cpf').text();
+    var nome = $('#' + itemId).find('.nome').text();
+
+    $('#cpfBeneficiario').val(cpf);
+    $('#nomeBeneficiario').val(nome);
+    $('#modalCadastroBeneficiario').modal('show');
+}
+
+function excluirBeneficiario(itemId) {
+    $('#' + itemId).remove();
+}
+
+
 function ModalDialog(titulo, texto) {
     var random = Math.random().toString().replace('.', '');
     var texto = '<div id="' + random + '" class="modal fade">                                                               ' +
