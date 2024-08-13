@@ -71,7 +71,7 @@ namespace WebAtividadeEntrevista.Models
         /// CPF
         /// </summary>
         [Required(ErrorMessage = "CPF é obrigatório.")]
-        [StringLength(14, ErrorMessage = "O CPF deve ter entre 11 e 14 caracteres.", MinimumLength = 11)]
+        [StringLength(14, ErrorMessage = "O CPF deve conter 11 digitos.", MinimumLength = 11)]
         public string CPF { get; set; }
     }
 }

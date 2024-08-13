@@ -1,5 +1,17 @@
 ﻿
 $(document).ready(function () {
+    $('#CPF').on('input', function () {
+        var value = $(this).val();
+        value = value.replace(/\D/g, '');
+
+        if (value.length <= 11) {
+            value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
+        }
+
+        $(this).val(value);
+    });
     $('#formCadastro').submit(function (e) {
         e.preventDefault();
         $.ajax({
