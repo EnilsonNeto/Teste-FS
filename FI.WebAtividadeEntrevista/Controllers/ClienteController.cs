@@ -27,6 +27,7 @@ namespace WebAtividadeEntrevista.Controllers
         public JsonResult Incluir(ClienteModel model)
         {
             BoCliente bo = new BoCliente();
+            BoBeneficiario boBeneficiario = new BoBeneficiario();
             CPFValidation cpfValidation = new CPFValidation();
 
             if (bo.VerificarExistencia(model.CPF))
@@ -67,7 +68,16 @@ namespace WebAtividadeEntrevista.Controllers
                     CPF = model.CPF
                 });
 
-           
+                foreach (BeneficiarioModel beneficiariosModel in model.Beneficiarios)
+                {
+                    boBeneficiario.Incluir(new Beneficiario
+                    {
+                        Nome = beneficiariosModel.Nome,
+                        CPF = beneficiariosModel.CPF,
+                        IdCliente = model.Id
+                    });
+                }
+
                 return Json("Cadastro efetuado com sucesso");
             }
         }

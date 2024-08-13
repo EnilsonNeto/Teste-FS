@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace WebAtividadeEntrevista.Models
 {
@@ -11,6 +8,8 @@ namespace WebAtividadeEntrevista.Models
     /// </summary>
     public class ClienteModel
     {
+        private List<BeneficiarioModel> _beneficiarios;
+
         public long Id { get; set; }
 
         /// <summary>
@@ -73,5 +72,15 @@ namespace WebAtividadeEntrevista.Models
         [Required(ErrorMessage = "CPF é obrigatório.")]
         [StringLength(14, ErrorMessage = "O CPF deve conter 11 digitos.", MinimumLength = 11)]
         public string CPF { get; set; }
+
+        /// <summary>
+        /// Beneficiarios
+        /// </summary>
+        [Required]
+        public List<BeneficiarioModel> Beneficiarios
+        {
+            get => _beneficiarios ?? new List<BeneficiarioModel>();
+            set => _beneficiarios = value;
+        }
     }
 }

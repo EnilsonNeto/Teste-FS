@@ -28,6 +28,7 @@ $(document).ready(function () {
                 "Logradouro": $(this).find("#Logradouro").val(),
                 "Telefone": $(this).find("#Telefone").val(),
                 "CPF": $(this).find("#CPF").val(),
+                "Beneficiarios": beneficiarios
             },
             error:
             function (r) {
@@ -46,30 +47,43 @@ $(document).ready(function () {
     
 })
 
-    var contadorBeneficiarios = 1;
-    var beneficiarioEditandoId = null;
+var beneficiarios = [];
+var IdrBeneficiarios = 1;
+var beneficiarioEditandoId = null;
 
 function salvarBeneficiario() {
     var cpf = $('#cpfBeneficiario').val();
     var nome = $('#nomeBeneficiario').val();
 
     if (beneficiarioEditandoId) {
+        var beneficiarioExistente = beneficiarios.find(b => b.id === beneficiarioEditandoId);
+        if (beneficiarioExistente) {
+            beneficiarioExistente.cpf = cpf;
+            beneficiarioExistente.nome = nome;
+        }
         $('#' + beneficiarioEditandoId).find('.cpf').text(cpf);
         $('#' + beneficiarioEditandoId).find('.nome').text(nome);
         beneficiarioEditandoId = null;
     } else {
-        var itemId = 'beneficiario-' + contadorBeneficiarios;
-        contadorBeneficiarios++;
+        var itemId = IdrBeneficiarios;
+        IdrBeneficiarios++;
+
+        var beneficiario = {
+            id: itemId,
+            cpf: cpf,
+            nome: nome
+        };
+        beneficiarios.push(beneficiario);
+
         var itemLista = $('<div class="d-flex justify-content-between align-items-center p-2 border-bottom text-center" id="' + itemId + '"></div>');
         itemLista.append($('<span class="col-md-4 cpf">' + cpf + '</span>'));
         itemLista.append($('<span class="col-md-4 nome">' + nome + '</span>'));
-        itemLista.append($('<div class="d-flex col-md-4 align-items-center justify-content-center text-center"><button class="btn btn-primary btn-sm me-3" onclick="alterarBeneficiario(\'' + itemId + '\')">Alterar</button><button class="btn btn-primary btn-sm" onclick="excluirBeneficiario(\'' + itemId + '\')">Excluir</button></div>'));
+        itemLista.append($('<div class="d-flex col-md-4 align-items-center justify-content-center text-center"><button class="btn btn-primary btn-sm me-3" onclick="alterarBeneficiario(\'' + itemId + '\')">Alterar</button><button class="btn btn-primary btn-sm ms-2" onclick="excluirBeneficiario(\'' + itemId + '\')">Excluir</button></div>'));
 
         $('#listaBeneficiarios').append(itemLista);
     }
     $('#cpfBeneficiario').val('');
     $('#nomeBeneficiario').val('');
-    $('#modalCadastroBeneficiario').modal('refresh');
 }
 
 function alterarBeneficiario(itemId) {
@@ -84,8 +98,8 @@ function alterarBeneficiario(itemId) {
 
 function excluirBeneficiario(itemId) {
     $('#' + itemId).remove();
+    beneficiarios = beneficiarios.filter(b => b.id !== itemId);
 }
-
 
 function ModalDialog(titulo, texto) {
     var random = Math.random().toString().replace('.', '');
@@ -110,3 +124,8 @@ function ModalDialog(titulo, texto) {
     $('body').append(texto);
     $('#' + random).modal('show');
 }
+
+$('#modalCadastroBeneficiario').on('hidden.bs.modal', function () {
+    console.log(beneficiarios);
+});
+

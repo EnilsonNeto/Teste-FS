@@ -103,7 +103,7 @@
 @*Modal de formulario para beneficiarios.*@
 
 <div class="modal fade" id="modalCadastroBeneficiario" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title"><b>Cadastrar Beneficiário</b></h4>
@@ -111,7 +111,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                 <form id="formCadastroBeneficiario">
                     <div class="row">
                         <div class="col-md-4">
@@ -148,7 +148,7 @@
                         <h5><b>Ações</b></h5>
                     </div>
                 </div>
-                <div id="listaBeneficiarios"></div>
+                <div id="listaBeneficiarios" style="margin-top: 8px"></div>
             </div>
         </div>
     </div>
