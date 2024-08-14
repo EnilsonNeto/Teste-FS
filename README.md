@@ -10,8 +10,6 @@ Este projeto é um [descrição breve do seu projeto]. Ele foi desenvolvido para
 
 Para uma visualização rápida do projeto, você pode assistir ao vídeo abaixo. Ele mostra uma demonstração das principais funcionalidades e como utilizar o aplicativo.
 
-![Demonstração do Projeto](assets/demo-video.mp4)
-
-Para assistir ao vídeo, clique no link abaixo ou baixe o arquivo da pasta `assets`:
-
-- [Vídeo de Demonstração](assets/demo-video.mp4)
+![Demonstração do Projeto](assets/first.gif)
+![Demonstração do Projeto](assets/second.gif)
+![Demonstração do Projeto](assets/third.gif)
