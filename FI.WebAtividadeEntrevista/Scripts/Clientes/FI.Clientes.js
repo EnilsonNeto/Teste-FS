@@ -1,5 +1,18 @@
 ﻿$(document).ready(function () {
-    $('#CPF', '#cpfBeneficiario').on('input', function () {
+    $('#CPF').on('input', function () {
+        var value = $(this).val();
+        value = value.replace(/\D/g, '');
+
+        if (value.length <= 11) {
+            value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
+        }
+
+        $(this).val(value);
+    });
+
+    $('#cpfBeneficiario').on('input', function () {
         var value = $(this).val();
         value = value.replace(/\D/g, '');
 
@@ -51,9 +64,9 @@
     var beneficiarioEditandoId = null;
 
     window.salvarBeneficiario = function () {
-        var cpf = $('#cpfBeneficiario').val().replace(/\D/g, '');
+        var cpf = $('#cpfBeneficiario').val();
         var nome = $('#nomeBeneficiario').val();
-
+        var cpfFormatado = formatarCPF(cpf);
         if (!validarCPF(cpf)) {
             ModalDialog('CPF inválido.', 'Por favor, insira um CPF válido.');
             return;
@@ -69,17 +82,17 @@
             $('#' + beneficiarioEditandoId).find('.nome').text(nome);
             beneficiarioEditandoId = null;
         } else {
+            var cpfbeneficiariosSemPontuacao = cpf.replace(/\D/g, '');
             var itemId = IdBeneficiarios++;
             var beneficiario = {
                 id: itemId,
-                cpf: cpf,
+                cpf: cpfbeneficiariosSemPontuacao,
                 nome: nome
             };
-            var cpfFormatado = formatarCPF(beneficiario.CPF);
             beneficiarios.push(beneficiario);
 
             var itemLista = $('<div class="d-flex justify-content-between align-items-center p-2 border-bottom text-center" id="' + itemId + '"></div>');
-            itemLista.append($('<span class="col-md-4 cpf">' + cpfFormatado + '</span>'));
+            itemLista.append($('<span class="col-md-4 cpf">' + cpf + '</span>'));
             itemLista.append($('<span class="col-md-4 nome">' + nome + '</span>'));
             itemLista.append($('<div class="d-flex col-md-4 align-items-center justify-content-center text-center"><button class="btn btn-primary btn-sm me-3" onclick="alterarBeneficiario(\'' + itemId + '\')">Alterar</button><button class="btn btn-primary btn-sm ms-2" onclick="excluirBeneficiario(\'' + itemId + '\')">Excluir</button></div>'));
 
@@ -107,10 +120,9 @@
 
 function formatarCPF(cpf) {
     cpf = cpf.replace(/\D/g, '');
-    if (cpf.length === 11) {
-        return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
-    }
-    return cpf;
+    if (cpf.length > 11) return cpf;
+    if (cpf.length <= 3) return cpf;
+    return cpf.slice(0, 3) + '.' + cpf.slice(3, 6) + '.' + cpf.slice(6, 9) + '-' + cpf.slice(9, 11);
 }
 
 function validarCPF(cpf) {
