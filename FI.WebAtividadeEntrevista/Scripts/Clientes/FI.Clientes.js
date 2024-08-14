@@ -1,5 +1,7 @@
 ﻿
 $(document).ready(function () {
+
+    console.log('teste2')
     $('#CPF').on('input', function () {
         var value = $(this).val();
         value = value.replace(/\D/g, '');
@@ -102,8 +104,6 @@ $(document).ready(function () {
         }
         $('#cpfBeneficiario').val('');
         $('#nomeBeneficiario').val('');
-
-        console.log('Beneficiário adicionado:', beneficiario);
     }
 
     window.alterarBeneficiario = function (itemId) {

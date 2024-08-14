@@ -46,7 +46,7 @@ namespace FI.AtividadeEntrevista.DAL
                 new System.Data.SqlClient.SqlParameter("IdCliente", idCliente)
             };
 
-            DataSet dataSet = base.Consultar("FI_SP_ConsBeneficiario", parametros);
+            DataSet dataSet = base.Consultar("FI_SP_ConsBeneficiariosByClienteId", parametros);
 
             List<DML.Beneficiario> result = Converter(dataSet);
 

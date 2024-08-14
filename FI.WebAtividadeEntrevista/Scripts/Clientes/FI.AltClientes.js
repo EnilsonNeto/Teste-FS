@@ -1,5 +1,25 @@
 ﻿
 $(document).ready(function () {
+    $.ajax({
+        url: '/Cliente/ListarBeneficiarios',
+        type: 'GET',
+        data: { idCliente: obj.Id },
+        success: function (response) {
+            if (response.success) {
+                // Atualiza a lista de beneficiários
+                atualizarListaBeneficiarios(response.data);
+            } else {
+                alert('Erro: ' + response.message);
+            }
+        },
+        error: function () {
+            alert('Erro ao tentar buscar os beneficiários.');
+        }
+    });
+    window.removerBeneficiario = function (id) {
+        alert('Remover beneficiário com ID: ' + id);
+    };
+
     $('#CPF').on('input', function () {
         var value = $(this).val();
         value = value.replace(/\D/g, '');
@@ -12,6 +32,7 @@ $(document).ready(function () {
 
         $(this).val(value);
     });
+
     if (obj) {
         $('#formCadastro #Nome').val(obj.Nome);
         $('#formCadastro #CEP').val(obj.CEP);
@@ -22,9 +43,7 @@ $(document).ready(function () {
         $('#formCadastro #Cidade').val(obj.Cidade);
         $('#formCadastro #Logradouro').val(obj.Logradouro);
         $('#formCadastro #Telefone').val(obj.Telefone);
-
-        // Formatar o CPF antes de atribuir ao campo
-        var cpf = obj.CPF.replace(/\D/g, ''); // Remover qualquer pontuação existente
+        var cpf = obj.CPF.replace(/\D/g, '');
         if (cpf.length <= 11) {
             cpf = cpf.replace(/(\d{3})(\d{1,3})/, '$1.$2');
             cpf = cpf.replace(/(\d{3})(\d{1,2})/, '$1.$2');
@@ -69,6 +88,35 @@ $(document).ready(function () {
     })
     
 })
+
+function atualizarListaBeneficiarios(beneficiarios) {
+    var listaHtml = '';
+    if (beneficiarios.length > 0) {
+        beneficiarios.forEach(function (beneficiario) {
+            listaHtml += '<div class="row" style="border-bottom: 1px solid #dddddd; padding: 10px 0;">' +
+                '<div class="col-md-4">' +
+                '<div class="form-group">' +
+                '<span>' + beneficiario.CPF + '</span>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-md-4">' +
+                '<div class="form-group">' +
+                '<span>' + beneficiario.Nome + '</span>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-md-4">' +
+                '<div class="d-flex">' +  // Adicionando d-flex para alinhar os botões horizontalmente
+                '<button type="button" class="btn btn-primary btn-sm me-2" onclick="alterarBeneficiario(' + beneficiario.Id + ')">Alterar</button>' +
+                '<button type="button" class="btn btn-primary btn-sm" onclick="removerBeneficiario(' + beneficiario.Id + ')">Remover</button>' +
+                '</div>' +
+                '</div>' +
+                '</div>';
+        });
+    } else {
+        listaHtml = '<div class="row"><div class="col-md-12 text-center">Nenhum beneficiário encontrado.</div></div>';
+    }
+    $('#listaBeneficiarios').html(listaHtml);
+}
 
 function ModalDialog(titulo, texto) {
     var random = Math.random().toString().replace('.', '');

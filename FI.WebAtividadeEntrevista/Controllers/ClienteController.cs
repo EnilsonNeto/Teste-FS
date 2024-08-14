@@ -3,10 +3,10 @@ using WebAtividadeEntrevista.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using FI.AtividadeEntrevista.DML;
 using FI.WebAtividadeEntrevista.Helper;
+using System.Web.UI.WebControls;
 
 namespace WebAtividadeEntrevista.Controllers
 {
@@ -53,9 +53,9 @@ namespace WebAtividadeEntrevista.Controllers
             }
             else
             {
-                
+
                 model.Id = bo.Incluir(new Cliente()
-                {                    
+                {
                     CEP = model.CEP,
                     Cidade = model.Cidade,
                     Email = model.Email,
@@ -125,7 +125,7 @@ namespace WebAtividadeEntrevista.Controllers
                     Telefone = model.Telefone,
                     CPF = model.CPF
                 });
-                               
+
                 return Json("Cadastro alterado com sucesso");
             }
         }
@@ -154,7 +154,6 @@ namespace WebAtividadeEntrevista.Controllers
                     CPF = cliente.CPF
                 };
 
-            
             }
 
             return View(model);
@@ -186,5 +185,32 @@ namespace WebAtividadeEntrevista.Controllers
                 return Json(new { Result = "ERROR", Message = ex.Message });
             }
         }
+
+        [HttpGet]
+        public JsonResult ListarBeneficiarios(long idCliente)
+        {
+            try
+            {
+                BoBeneficiario boBeneficiario = new BoBeneficiario();
+                List<Beneficiario> beneficiarios = boBeneficiario.Listar(idCliente);
+
+                List<BeneficiarioModel> beneficiariosModel = beneficiarios.Select(b => new BeneficiarioModel
+                {
+                    Id = b.Id,
+                    Nome = b.Nome,
+                    CPF = b.CPF,
+
+                }).ToList();
+
+                return Json(new { success = true, data = beneficiariosModel }, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro: {ex.ToString()}");
+                return Json(new { success = false, message = ex.Message }, JsonRequestBehavior.AllowGet);
+            }
+        }
+
+
     }
 }
