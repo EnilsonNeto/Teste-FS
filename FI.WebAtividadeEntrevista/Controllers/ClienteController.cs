@@ -179,7 +179,6 @@ namespace WebAtividadeEntrevista.Controllers
 
                 List<Cliente> clientes = new BoCliente().Pesquisa(jtStartIndex, jtPageSize, campo, crescente.Equals("ASC", StringComparison.InvariantCultureIgnoreCase), out qtd);
 
-                //Return result to jTable
                 return Json(new { Result = "OK", Records = clientes, TotalRecordCount = qtd });
             }
             catch (Exception ex)

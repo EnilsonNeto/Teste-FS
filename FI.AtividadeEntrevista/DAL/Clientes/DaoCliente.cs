@@ -55,6 +55,10 @@ namespace FI.AtividadeEntrevista.DAL
             return cli.FirstOrDefault();
         }
 
+        /// <summary>
+        /// Verifica a existencia de um cpf em clientes para validação
+        /// </summary>
+
         internal bool VerificarExistencia(string CPF, long? id = null)
         {
             string cpfSemPontuacao = CPF.Replace(".", "").Replace("-", "");
@@ -143,6 +147,10 @@ namespace FI.AtividadeEntrevista.DAL
 
             base.Executar("FI_SP_DelCliente", parametros);
         }
+
+        /// <summary>
+        /// Lista todos os Beneficiarios
+        /// </summary>
 
         private List<DML.Cliente> Converter(DataSet ds)
         {

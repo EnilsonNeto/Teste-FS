@@ -11,8 +11,14 @@ namespace WebAtividadeEntrevista.Models
     /// </summary>
     public class BeneficiarioModel
     {
+        /// <summary>
+        /// Id
+        /// </summary>
         public long Id { get; set; }
-        
+
+        /// <summary>
+        /// IdCliente
+        /// </summary>
         public long IdCliente { get; set; }
 
         /// <summary>

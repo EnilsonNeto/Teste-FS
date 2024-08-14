@@ -84,6 +84,10 @@ namespace FI.AtividadeEntrevista.DAL
             base.Executar("FI_SP_DelBeneficiario", parametros);
         }
 
+        /// <summary>
+        /// Lista todos os Beneficiarios
+        /// </summary>
+
         private List<DML.Beneficiario> Converter(DataSet dataSet)
         {
             List<DML.Beneficiario> lista = new List<DML.Beneficiario>();
@@ -107,6 +111,10 @@ namespace FI.AtividadeEntrevista.DAL
             return lista;
         }
 
+        /// <summary>
+        /// Realiza uma consulta na tabela Beneficiarios
+        /// </summary>
+
         internal DML.Beneficiario Consultar(long Id)
         {
             List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
@@ -118,6 +126,10 @@ namespace FI.AtividadeEntrevista.DAL
 
             return cli.FirstOrDefault();
         }
+
+        /// <summary>
+        /// Verifica a existencia de um cpf em beneficiarios para validação
+        /// </summary>
 
         internal bool VerificarExistencia(string CPF, long? id = null)
         {

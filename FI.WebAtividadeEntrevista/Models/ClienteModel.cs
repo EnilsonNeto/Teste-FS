@@ -10,6 +10,9 @@ namespace WebAtividadeEntrevista.Models
     {
         private List<BeneficiarioModel> _beneficiarios;
 
+        /// <summary>
+        /// ID
+        /// </summary>
         public long Id { get; set; }
 
         /// <summary>

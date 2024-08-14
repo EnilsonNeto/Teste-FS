@@ -44,11 +44,19 @@ namespace FI.AtividadeEntrevista.BLL
             return daoBeneficiario.Listar(idCliente);
         }
 
+        /// <summary>
+        /// Verifica se esta cadastrando com o mesmo cpf outro usuario.
+        /// </summary>
+
         public bool VerificarExistencia(string CPF, long? id = null)
         {
             DAL.DaoBeneficiario cli = new DAL.DaoBeneficiario();
             return cli.VerificarExistencia(CPF, id);
         }
+
+        /// <summary>
+        /// Realiza um consulta na tabela de beneficiarios.
+        /// </summary>
 
         public DML.Beneficiario Consultar(long id)
         {

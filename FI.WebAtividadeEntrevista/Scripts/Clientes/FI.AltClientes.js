@@ -18,6 +18,19 @@ $(document).ready(function () {
         }
     });
 
+    $('#cpfBeneficiario').on('input', function () {
+        var value = $(this).val();
+        value = value.replace(/\D/g, '');
+
+        if (value.length <= 11) {
+            value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
+        }
+
+        $(this).val(value);
+    });
+
     window.removerBeneficiario = function (id) {
         if (confirm('Tem certeza de que deseja remover este beneficiário?')) {
             $.ajax({
@@ -34,7 +47,6 @@ $(document).ready(function () {
             });
         }
     };
-
 
     var beneficiarioAtual = null;
     window.alterarBeneficiarioCadastrado = function (id) {
@@ -84,20 +96,6 @@ $(document).ready(function () {
                 }
             });
         }
-    });
-
-
-    $('#CPF').on('input', function () {
-        var value = $(this).val();
-        value = value.replace(/\D/g, '');
-
-        if (value.length <= 11) {
-            value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
-            value = value.replace(/(\d{3})(\d{1,2})/, '$1.$2');
-            value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
-        }
-
-        $(this).val(value);
     });
 
     if (obj) {
@@ -154,22 +152,32 @@ $(document).ready(function () {
     })
     
 })
+
+function formatarCPF(cpf) {
+    cpf = cpf.replace(/\D/g, '');
+    if (cpf.length === 11) {
+        return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, '$1.$2.$3-$4');
+    }
+    return cpf;
+}
+
 function atualizarListaBeneficiarios(beneficiarios) {
     var listaHtml = '';
     if (beneficiarios.length > 0) {
         beneficiarios.forEach(function (beneficiario) {
+            var cpfFormatado = formatarCPF(beneficiario.CPF);
             listaHtml += '<div class="row" style="border-bottom: 1px solid #dddddd; padding: 10px 0;">' +
-                '<div class="col-md-4">' +
+                '<div class="col-md-4 text-center">' +
                 '<div class="form-group">' +
-                '<span>' + beneficiario.CPF + '</span>' +
+                '<span>' + cpfFormatado + '</span>' +
                 '</div>' +
                 '</div>' +
-                '<div class="col-md-4">' +
+                '<div class="col-md-4 text-center">' +
                 '<div class="form-group">' +
                 '<span>' + beneficiario.Nome + '</span>' +
                 '</div>' +
                 '</div>' +
-                '<div class="col-md-4">' +
+                '<div class="col-md-4 text-center">' +
                 '<div class="d-flex">' +
                 '<button type="button" class="btn btn-primary btn-sm me-2" onclick="alterarBeneficiarioCadastrado(' + beneficiario.Id + ')">Alterar</button>' +
                 '<button type="button" class="btn btn-primary btn-sm" onclick="removerBeneficiario(' + beneficiario.Id + ')">Remover</button>' +
