@@ -66,7 +66,7 @@ namespace WebAtividadeEntrevista.Controllers
             CPFValidation cpfValidation = new CPFValidation();
             string cpfSemPontuacao = model.CPF.Replace(".", "").Replace("-", "");
 
-            if (bo.VerificarExistencia(cpfSemPontuacao))
+            if (bo.VerificarExistencia(cpfSemPontuacao, model.Id))
             {
                 Response.StatusCode = 400;
                 return Json("Erro: CPF já cadastrado no sistema digite um CPF válido.");

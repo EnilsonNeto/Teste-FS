@@ -135,8 +135,7 @@ $(document).ready(function () {
                 "Cidade": $(this).find("#Cidade").val(),
                 "Logradouro": $(this).find("#Logradouro").val(),
                 "Telefone": $(this).find("#Telefone").val(),
-                "CPF": cpfSemPontuacao,
-                "Beneficiarios": beneficiarios
+                "CPF": cpfSemPontuacao
             },
             error:
             function (r) {

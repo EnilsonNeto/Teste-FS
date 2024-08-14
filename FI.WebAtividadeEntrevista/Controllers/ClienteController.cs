@@ -29,6 +29,7 @@ namespace WebAtividadeEntrevista.Controllers
             BoCliente bo = new BoCliente();
             BoBeneficiario boBeneficiario = new BoBeneficiario();
             CPFValidation cpfValidation = new CPFValidation();
+            string cpfSemPontuacao = model.CPF.Replace(".", "").Replace("-", "");
 
             if (bo.VerificarExistencia(model.CPF))
             {
@@ -65,7 +66,7 @@ namespace WebAtividadeEntrevista.Controllers
                     Nome = model.Nome,
                     Sobrenome = model.Sobrenome,
                     Telefone = model.Telefone,
-                    CPF = model.CPF
+                    CPF = cpfSemPontuacao
                 });
 
                 foreach (BeneficiarioModel beneficiariosModel in model.Beneficiarios)
@@ -87,8 +88,9 @@ namespace WebAtividadeEntrevista.Controllers
         {
             BoCliente bo = new BoCliente();
             CPFValidation cpfValidation = new CPFValidation();
+            string cpfSemPontuacao = model.CPF.Replace(".", "").Replace("-", "");
 
-            if (bo.VerificarExistencia(model.CPF))
+            if (bo.VerificarExistencia(cpfSemPontuacao, model.Id))
             {
                 Response.StatusCode = 400;
                 return Json("Erro: CPF já cadastrado no sistema digite um CPF válido.");
@@ -123,7 +125,7 @@ namespace WebAtividadeEntrevista.Controllers
                     Nome = model.Nome,
                     Sobrenome = model.Sobrenome,
                     Telefone = model.Telefone,
-                    CPF = model.CPF
+                    CPF = cpfSemPontuacao
                 });
 
                 return Json("Cadastro alterado com sucesso");

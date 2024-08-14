@@ -44,10 +44,10 @@ namespace FI.AtividadeEntrevista.BLL
             return daoBeneficiario.Listar(idCliente);
         }
 
-        public bool VerificarExistencia(string CPF)
+        public bool VerificarExistencia(string CPF, long? id = null)
         {
             DAL.DaoBeneficiario cli = new DAL.DaoBeneficiario();
-            return cli.VerificarExistencia(CPF);
+            return cli.VerificarExistencia(CPF, id);
         }
 
         public DML.Beneficiario Consultar(long id)
