@@ -1,7 +1,7 @@
 ﻿CREATE OR ALTER PROCEDURE FI_SP_IncBeneficiarioV2
     @Nome          VARCHAR(50),
     @CPF           VARCHAR(14),
-    @IdCliente     INT -- Assumindo que IdCliente é um INT. Ajuste conforme necessário.
+    @IdCliente     INT
 AS
 BEGIN
     INSERT INTO Beneficiarios (Nome, CPF, IdCliente)

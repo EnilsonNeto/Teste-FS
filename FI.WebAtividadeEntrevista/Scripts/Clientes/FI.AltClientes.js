@@ -1,5 +1,17 @@
 ﻿
 $(document).ready(function () {
+    $('#CPF').on('input', function () {
+        var value = $(this).val();
+        value = value.replace(/\D/g, '');
+
+        if (value.length <= 11) {
+            value = value.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1.$2');
+            value = value.replace(/(\d{3})(\d{1,2})/, '$1-$2');
+        }
+
+        $(this).val(value);
+    });
     if (obj) {
         $('#formCadastro #Nome').val(obj.Nome);
         $('#formCadastro #CEP').val(obj.CEP);
@@ -10,11 +22,20 @@ $(document).ready(function () {
         $('#formCadastro #Cidade').val(obj.Cidade);
         $('#formCadastro #Logradouro').val(obj.Logradouro);
         $('#formCadastro #Telefone').val(obj.Telefone);
-        $('#formCadastro #CPF').val(obj.CPF);
+
+        // Formatar o CPF antes de atribuir ao campo
+        var cpf = obj.CPF.replace(/\D/g, ''); // Remover qualquer pontuação existente
+        if (cpf.length <= 11) {
+            cpf = cpf.replace(/(\d{3})(\d{1,3})/, '$1.$2');
+            cpf = cpf.replace(/(\d{3})(\d{1,2})/, '$1.$2');
+            cpf = cpf.replace(/(\d{3})(\d{1,2})/, '$1-$2');
+        }
+        $('#formCadastro #CPF').val(cpf);
     }
+
     $('#formCadastro').submit(function (e) {
         e.preventDefault();
-        
+        var cpfSemPontuacao = $('#CPF').val().replace(/\D/g, '');
         $.ajax({
             url: urlPost,
             method: "POST",
@@ -28,7 +49,8 @@ $(document).ready(function () {
                 "Cidade": $(this).find("#Cidade").val(),
                 "Logradouro": $(this).find("#Logradouro").val(),
                 "Telefone": $(this).find("#Telefone").val(),
-                "CPF": $(this).find("#CPF").val()
+                "CPF": cpfSemPontuacao,
+                "Beneficiarios": beneficiarios
             },
             error:
             function (r) {
