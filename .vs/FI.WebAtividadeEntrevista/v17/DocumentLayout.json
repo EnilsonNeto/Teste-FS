@@ -3,140 +3,16 @@
   "WorkspaceRootPath": "E:\\Dev\\TesteFS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.webatividadeentrevista\\scripts\\clientes\\fi.clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\scripts\\clientes\\fi.clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.webatividadeentrevista\\scripts\\clientes\\fi.altclientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|E:\\Dev\\TesteFS\\fi.webatividadeentrevista\\scripts\\clientes\\fi.altclientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\scripts\\clientes\\fi.altclientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.webatividadeentrevista\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|E:\\Dev\\TesteFS\\fi.webatividadeentrevista\\scripts\\clientes\\fi.clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\scripts\\clientes\\fi.clientes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.webatividadeentrevista\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\models\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.webatividadeentrevista\\models\\beneficiariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\models\\beneficiariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\daocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\daocliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\daobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\daobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_verificacliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_verificacliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_pesqcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_pesqcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_inccliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_inccliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_delcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_delcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_conscliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_conscliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_altcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_altcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_verificabeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_verificabeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_pesqbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_pesqbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_incbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_incbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_delbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_delbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiariobyclienteid .sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiariobyclienteid .sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_altbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_altbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\bll\\bobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\bll\\bobeneficiario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_altbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_altbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiariobyclienteid .sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_consbeneficiariobyclienteid .sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_delbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_delbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_incbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_incbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_pesqbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_pesqbeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_verificabeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\beneficiario\\procedures\\fi_sp_verificabeneficiario.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_altcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_altcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_conscliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_conscliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_delcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_delcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_inccliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_inccliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_pesqcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_pesqcliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_verificacliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{2B795BB7-A890-48FA-8F70-EF89F2E318D8}|FI.AtividadeEntrevista\\FI.AtividadeEntrevista.csproj|solutionrelative:fi.atividadeentrevista\\dal\\clientes\\procedures\\fi_sp_verificacliente.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|e:\\dev\\testefs\\fi.webatividadeentrevista\\views\\cliente\\formsbeneficiario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDA04BC2-EFC2-487F-8F40-A95C652F6A15}|FI.WebAtividadeEntrevista\\FI.WebAtividadeEntrevista.csproj|solutionrelative:fi.webatividadeentrevista\\views\\cliente\\formsbeneficiario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,266 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FI.Clientes.js",
               "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.Clientes.js",
               "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.Clientes.js",
               "ToolTip": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.Clientes.js",
               "RelativeToolTip": "FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.Clientes.js",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowB4AAABJAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwGAAAAAQAQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-14T13:11:56.864Z",
+              "WhenOpened": "2024-08-14T18:21:58.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FI.AltClientes.js",
               "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.AltClientes.js",
               "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.AltClientes.js",
               "ToolTip": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.AltClientes.js",
               "RelativeToolTip": "FI.WebAtividadeEntrevista\\Scripts\\Clientes\\FI.AltClientes.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAALAAAAA6AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBQAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-08-14T13:11:28.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClienteModel.cs",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
-              "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
-              "RelativeToolTip": "FI.WebAtividadeEntrevista\\Models\\ClienteModel.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAuwA0AAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T13:11:10.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BeneficiarioModel.cs",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Models\\BeneficiarioModel.cs",
-              "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Models\\BeneficiarioModel.cs",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Models\\BeneficiarioModel.cs",
-              "RelativeToolTip": "FI.WebAtividadeEntrevista\\Models\\BeneficiarioModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T13:10:46.651Z",
+              "WhenOpened": "2024-08-14T18:12:46.573Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "FI.WebAtividadeEntrevista\\Controllers\\ClienteController.cs",
-              "ViewState": "AQIAAK4AAAAAAAAAAAAmwLQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T13:10:12.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DaoCliente.cs",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\DaoCliente.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAmwJYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T13:08:44.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FI_SP_VerificaCliente.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_VerificaCliente.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_VerificaCliente.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_VerificaCliente.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_VerificaCliente.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:08:41.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FI_SP_PesqCliente.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_PesqCliente.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_PesqCliente.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_PesqCliente.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_PesqCliente.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:08:40.125Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FI_SP_IncCliente.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_IncCliente.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_IncCliente.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_IncCliente.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_IncCliente.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:08:38.593Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FI_SP_DelCliente.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_DelCliente.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_DelCliente.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_DelCliente.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_DelCliente.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:08:37.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FI_SP_ConsCliente.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_ConsCliente.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_ConsCliente.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_ConsCliente.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_ConsCliente.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:08:35.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FI_SP_AltCliente.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_AltCliente.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_AltCliente.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_AltCliente.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Clientes\\Procedures\\FI_SP_AltCliente.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:08:32.181Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DaoBeneficiario.cs",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\DaoBeneficiario.cs",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\DaoBeneficiario.cs",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\DaoBeneficiario.cs",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\DaoBeneficiario.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAwwFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T13:06:59.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FI_SP_VerificaBeneficiario.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_VerificaBeneficiario.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_VerificaBeneficiario.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_VerificaBeneficiario.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_VerificaBeneficiario.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:55.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FI_SP_PesqBeneficiario.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_PesqBeneficiario.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_PesqBeneficiario.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_PesqBeneficiario.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_PesqBeneficiario.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:51.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FI_SP_IncBeneficiario.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_IncBeneficiario.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_IncBeneficiario.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_IncBeneficiario.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_IncBeneficiario.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:50.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FI_SP_DelBeneficiario.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_DelBeneficiario.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_DelBeneficiario.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_DelBeneficiario.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_DelBeneficiario.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:48.566Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FI_SP_ConsBeneficiarioByClienteId .sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiarioByClienteId .sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiarioByClienteId .sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiarioByClienteId .sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiarioByClienteId .sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:47.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FI_SP_ConsBeneficiario.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiario.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiario.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiario.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_ConsBeneficiario.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:45.825Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FI_SP_AltBeneficiario.sql ",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_AltBeneficiario.sql",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_AltBeneficiario.sql",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_AltBeneficiario.sql",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\DAL\\Beneficiario\\Procedures\\FI_SP_AltBeneficiario.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-08-14T13:06:43.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "BoBeneficiario.cs",
-              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
-              "RelativeDocumentMoniker": "FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
-              "ToolTip": "E:\\Dev\\TesteFS\\FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
-              "RelativeToolTip": "FI.AtividadeEntrevista\\BLL\\BoBeneficiario.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowDgAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-14T13:05:39.498Z",
+              "Title": "FormsBeneficiario.cshtml",
+              "DocumentMoniker": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Views\\Cliente\\FormsBeneficiario.cshtml",
+              "RelativeDocumentMoniker": "FI.WebAtividadeEntrevista\\Views\\Cliente\\FormsBeneficiario.cshtml",
+              "ToolTip": "E:\\Dev\\TesteFS\\FI.WebAtividadeEntrevista\\Views\\Cliente\\FormsBeneficiario.cshtml",
+              "RelativeToolTip": "FI.WebAtividadeEntrevista\\Views\\Cliente\\FormsBeneficiario.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T18:07:51.046Z",
               "EditorCaption": ""
             }
           ]

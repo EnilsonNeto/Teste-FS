@@ -91,10 +91,11 @@
             };
             beneficiarios.push(beneficiario);
 
-            var itemLista = $('<div class="d-flex justify-content-between align-items-center p-2 border-bottom text-center" id="' + itemId + '"></div>');
+            var itemLista = $('<div class="d-flex justify-content-between align-items-center p-2 border text-start" id="' + itemId + '" style="padding -bottom: 10px;"></div>');
             itemLista.append($('<span class="col-md-4 cpf">' + cpf + '</span>'));
             itemLista.append($('<span class="col-md-4 nome">' + nome + '</span>'));
-            itemLista.append($('<div class="d-flex col-md-4 align-items-center justify-content-center text-center"><button class="btn btn-primary btn-sm me-3" onclick="alterarBeneficiario(\'' + itemId + '\')">Alterar</button><button class="btn btn-primary btn-sm ms-2" onclick="excluirBeneficiario(\'' + itemId + '\')">Excluir</button></div>'));
+            itemLista.append($('<div class="d-flex col-md-4 align-items-center justify-content-center text-center" style="margin-bottom: 10px;"><button class="btn btn-primary btn-sm me-3" style="margin-right: 8px;" onclick="alterarBeneficiario(\'' + itemId + '\')">Alterar</button><button class="btn btn-primary btn-sm ms-2" onclick="excluirBeneficiario(\'' + itemId + '\')">Excluir</button></div>'));
+
 
             $('#listaBeneficiarios').append(itemLista);
         }
