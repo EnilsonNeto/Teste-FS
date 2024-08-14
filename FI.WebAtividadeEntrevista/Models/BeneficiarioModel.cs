@@ -11,7 +11,9 @@ namespace WebAtividadeEntrevista.Models
     /// </summary>
     public class BeneficiarioModel
     {
-        public long? Id { get; set; }
+        public long Id { get; set; }
+        
+        public long IdCliente { get; set; }
 
         /// <summary>
         /// Nome
@@ -23,7 +25,7 @@ namespace WebAtividadeEntrevista.Models
         /// CPF
         /// </summary>
         [Required(ErrorMessage = "CPF é obrigatório.")]
-        [StringLength(11, ErrorMessage = "O CPF deve conter 11 digitos.", MinimumLength = 11)]
+        [StringLength(14, ErrorMessage = "O CPF deve conter 11 digitos.", MinimumLength = 11)]
         public string CPF { get; set; }
     }
 }

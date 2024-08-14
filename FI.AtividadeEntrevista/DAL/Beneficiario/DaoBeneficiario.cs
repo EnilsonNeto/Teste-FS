@@ -63,7 +63,8 @@ namespace FI.AtividadeEntrevista.DAL
             {
                 new System.Data.SqlClient.SqlParameter("Nome", beneficiario.Nome),
                 new System.Data.SqlClient.SqlParameter("CPF", beneficiario.CPF),
-                new System.Data.SqlClient.SqlParameter("ID", beneficiario.Id)
+                new System.Data.SqlClient.SqlParameter("IdCliente", beneficiario.IdCliente),
+                new System.Data.SqlClient.SqlParameter("ID", beneficiario.Id),
             };
 
             base.Executar("FI_SP_AltBeneficiario", parametros);
@@ -104,6 +105,31 @@ namespace FI.AtividadeEntrevista.DAL
             }
 
             return lista;
+        }
+
+        internal DML.Beneficiario Consultar(long Id)
+        {
+            List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
+
+            parametros.Add(new System.Data.SqlClient.SqlParameter("Id", Id));
+
+            DataSet ds = base.Consultar("FI_SP_ConsBeneficiario", parametros);
+            List<DML.Beneficiario> cli = Converter(ds);
+
+            return cli.FirstOrDefault();
+        }
+
+        internal bool VerificarExistencia(string CPF)
+        {
+            string cpfSemPontuacao = CPF.Replace(".", "").Replace("-", "");
+
+            List<System.Data.SqlClient.SqlParameter> parametros = new List<System.Data.SqlClient.SqlParameter>();
+
+            parametros.Add(new System.Data.SqlClient.SqlParameter("CPF", cpfSemPontuacao));
+
+            DataSet ds = base.Consultar("FI_SP_VerificaBeneficiario", parametros);
+
+            return ds.Tables[0].Rows.Count > 0;
         }
     }
 }

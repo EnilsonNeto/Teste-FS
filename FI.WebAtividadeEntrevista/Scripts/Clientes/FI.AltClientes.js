@@ -1,4 +1,5 @@
-﻿
+﻿var beneficiariosArray = [];
+
 $(document).ready(function () {
     $.ajax({
         url: '/Cliente/ListarBeneficiarios',
@@ -6,7 +7,7 @@ $(document).ready(function () {
         data: { idCliente: obj.Id },
         success: function (response) {
             if (response.success) {
-                // Atualiza a lista de beneficiários
+                beneficiariosArray = response.data;
                 atualizarListaBeneficiarios(response.data);
             } else {
                 alert('Erro: ' + response.message);
@@ -16,9 +17,75 @@ $(document).ready(function () {
             alert('Erro ao tentar buscar os beneficiários.');
         }
     });
+
     window.removerBeneficiario = function (id) {
-        alert('Remover beneficiário com ID: ' + id);
+        if (confirm('Tem certeza de que deseja remover este beneficiário?')) {
+            $.ajax({
+                url: '/Beneficiario/Excluir',
+                type: 'POST',
+                data: { id: id },
+                success: function (response) {
+                    ModalDialog('Sucesso!', 'Beneficiário removido com sucesso.');
+                    location.reload();
+                },
+                error: function (xhr) {
+                    alert('Erro: ' + xhr.responseText);
+                }
+            });
+        }
     };
+
+
+    var beneficiarioAtual = null;
+    window.alterarBeneficiarioCadastrado = function (id) {
+        beneficiarioAtual = beneficiariosArray.find(b => b.Id === id);
+
+        if (beneficiarioAtual) {
+            $('#nomeBeneficiario').val(beneficiarioAtual.Nome);
+            $('#cpfBeneficiario').val(beneficiarioAtual.CPF);
+        }
+    };
+
+    $('#incluirButton').click(function (e) {
+        e.preventDefault();
+
+        var dadosBeneficiario = {
+            Nome: $('#nomeBeneficiario').val(),
+            CPF: $('#cpfBeneficiario').val(),
+            IdCliente: obj.Id
+        };
+
+        if (beneficiarioAtual) {
+            dadosBeneficiario.Id = beneficiarioAtual.Id;
+
+            $.ajax({
+                url: '/Beneficiario/Alterar',
+                type: 'POST',
+                data: dadosBeneficiario,
+                success: function (response) {
+                    ModalDialog('Sucesso!', 'O beneficiario foi alterado.');
+                    location.reload();
+                },
+                error: function (xhr) {
+                    alert('Erro: ' + xhr.responseText);
+                }
+            });
+        } else {
+            $.ajax({
+                url: '/Beneficiario/Incluir',
+                type: 'POST',
+                data: dadosBeneficiario,
+                success: function (response) {
+                    ModalDialog('Sucesso!', 'O beneficiário foi adicionado.');
+                    location.reload();
+                },
+                error: function (xhr) {
+                    alert('Erro: ' + xhr.responseText);
+                }
+            });
+        }
+    });
+
 
     $('#CPF').on('input', function () {
         var value = $(this).val();
@@ -88,7 +155,6 @@ $(document).ready(function () {
     })
     
 })
-
 function atualizarListaBeneficiarios(beneficiarios) {
     var listaHtml = '';
     if (beneficiarios.length > 0) {
@@ -105,8 +171,8 @@ function atualizarListaBeneficiarios(beneficiarios) {
                 '</div>' +
                 '</div>' +
                 '<div class="col-md-4">' +
-                '<div class="d-flex">' +  // Adicionando d-flex para alinhar os botões horizontalmente
-                '<button type="button" class="btn btn-primary btn-sm me-2" onclick="alterarBeneficiario(' + beneficiario.Id + ')">Alterar</button>' +
+                '<div class="d-flex">' +
+                '<button type="button" class="btn btn-primary btn-sm me-2" onclick="alterarBeneficiarioCadastrado(' + beneficiario.Id + ')">Alterar</button>' +
                 '<button type="button" class="btn btn-primary btn-sm" onclick="removerBeneficiario(' + beneficiario.Id + ')">Remover</button>' +
                 '</div>' +
                 '</div>' +
