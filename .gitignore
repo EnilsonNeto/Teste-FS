@@ -36,7 +36,7 @@ _buildlogs/
 *.bak
 
 # Ignore arquivos do banco de dados local
-*.mdf
+*.ldf
 
 # Ignore o arquivo de configuração do IIS Express
 .vs\config\applicationhost.config
