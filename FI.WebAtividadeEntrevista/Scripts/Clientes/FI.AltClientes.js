@@ -29,6 +29,24 @@ $(document).ready(function () {
         $(this).val(value);
     });
 
+    $('#CEP').on('input', function () {
+        var value = $(this).val().replace(/\D/g, '');
+        if (value.length === 8) {
+            value = value.replace(/(\d{5})(\d{3})/, '$1-$2');
+        }
+        $(this).val(value);
+    });
+
+    $('#Telefone').on('input', function () {
+        var value = $(this).val().replace(/\D/g, '');
+        if (value.length > 10) {
+            value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+        } else {
+            value = value.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+        }
+        $(this).val(value);
+    });
+
     window.removerBeneficiario = function (id) {
         if (confirm('Tem certeza de que deseja remover este beneficiário?')) {
             $.ajax({
@@ -98,39 +116,35 @@ $(document).ready(function () {
 
     if (obj) {
         $('#formCadastro #Nome').val(obj.Nome);
-        $('#formCadastro #CEP').val(obj.CEP);
+        $('#formCadastro #CEP').val(formatarCEP(obj.CEP));
         $('#formCadastro #Email').val(obj.Email);
         $('#formCadastro #Sobrenome').val(obj.Sobrenome);
         $('#formCadastro #Nacionalidade').val(obj.Nacionalidade);
         $('#formCadastro #Estado').val(obj.Estado);
         $('#formCadastro #Cidade').val(obj.Cidade);
         $('#formCadastro #Logradouro').val(obj.Logradouro);
-        $('#formCadastro #Telefone').val(obj.Telefone);
-        var cpf = obj.CPF.replace(/\D/g, '');
-        if (cpf.length <= 11) {
-            cpf = cpf.replace(/(\d{3})(\d{1,3})/, '$1.$2');
-            cpf = cpf.replace(/(\d{3})(\d{1,2})/, '$1.$2');
-            cpf = cpf.replace(/(\d{3})(\d{1,2})/, '$1-$2');
-        }
-        $('#formCadastro #CPF').val(cpf);
+        $('#formCadastro #Telefone').val(formatarTelefone(obj.Telefone));
+        $('#formCadastro #CPF').val(formatarCPF(obj.CPF));
     }
 
     $('#formCadastro').submit(function (e) {
         e.preventDefault();
         var cpfSemPontuacao = $('#CPF').val().replace(/\D/g, '');
+        var cepSemPontuacao = $('#CEP').val().replace(/\D/g, '');
+        var telefoneSemPontuacao = $('#Telefone').val().replace(/\D/g, '');
         $.ajax({
             url: urlPost,
             method: "POST",
             data: {
                 "NOME": $(this).find("#Nome").val(),
-                "CEP": $(this).find("#CEP").val(),
+                "CEP": cepSemPontuacao,
                 "Email": $(this).find("#Email").val(),
                 "Sobrenome": $(this).find("#Sobrenome").val(),
                 "Nacionalidade": $(this).find("#Nacionalidade").val(),
                 "Estado": $(this).find("#Estado").val(),
                 "Cidade": $(this).find("#Cidade").val(),
                 "Logradouro": $(this).find("#Logradouro").val(),
-                "Telefone": $(this).find("#Telefone").val(),
+                "Telefone": telefoneSemPontuacao,
                 "CPF": cpfSemPontuacao
             },
             error:
@@ -178,6 +192,23 @@ function formatarCPF(cpf) {
     return cpf;
 }
 
+function formatarCEP(cep) {
+    cep = cep.replace(/\D/g, '');
+    if (cep.length === 8) {
+        return cep.replace(/(\d{5})(\d{3})/, '$1-$2');
+    }
+    return cep;
+}
+
+function formatarTelefone(telefone) {
+    telefone = telefone.replace(/\D/g, '');
+    if (telefone.length > 10) {
+        return telefone.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+    } else {
+        return telefone.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+    }
+}
+
 function atualizarListaBeneficiarios(beneficiarios) {
     var listaHtml = '';
     if (beneficiarios.length > 0) {
@@ -205,8 +236,6 @@ function atualizarListaBeneficiarios(beneficiarios) {
     }
     $('#listaBeneficiarios').html(listaHtml);
 }
-
-
 
 function ModalDialog(titulo, texto) {
     var random = Math.random().toString().replace('.', '');

@@ -29,25 +29,48 @@
         $(this).val(value);
     });
 
+    $('#CEP').on('input', function () {
+        var value = $(this).val();
+        value = value.replace(/\D/g, '');
+        if (value.length <= 8) {
+            value = value.replace(/(\d{5})(\d{1,3})/, '$1-$2');
+        }
+        $(this).val(value);
+    });
+
+    $('#Telefone').on('input', function () {
+        var value = $(this).val();
+        value = value.replace(/\D/g, '');
+        if (value.length <= 11) {
+            value = value.replace(/(\d{2})(\d{1,5})(\d{1,4})/, '($1) $2-$3');
+        }
+        $(this).val(value);
+    });
+
     $('#formCadastro').submit(function (e) {
         e.preventDefault();
+
         var cpfSemPontuacao = $('#CPF').val().replace(/\D/g, '');
+        var cepSemPontuacao = $('#CEP').val().replace(/\D/g, '');
+        var telefoneSemPontuacao = $('#Telefone').val().replace(/\D/g, '');
+
         $.ajax({
             url: urlPost,
             method: "POST",
             data: {
                 "NOME": $(this).find("#Nome").val(),
-                "CEP": $(this).find("#CEP").val(),
+                "CEP": cepSemPontuacao,
                 "Email": $(this).find("#Email").val(),
                 "Sobrenome": $(this).find("#Sobrenome").val(),
                 "Nacionalidade": $(this).find("#Nacionalidade").val(),
                 "Estado": $(this).find("#Estado").val(),
                 "Cidade": $(this).find("#Cidade").val(),
                 "Logradouro": $(this).find("#Logradouro").val(),
-                "Telefone": $(this).find("#Telefone").val(),
+                "Telefone": telefoneSemPontuacao,
                 "CPF": cpfSemPontuacao,
                 "Beneficiarios": beneficiarios
             },
+
             error:
                 function (r) {
                     if (r.status == 400)
