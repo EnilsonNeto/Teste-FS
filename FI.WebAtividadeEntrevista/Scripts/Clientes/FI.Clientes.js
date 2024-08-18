@@ -1,4 +1,8 @@
 ﻿$(document).ready(function () {
+    var beneficiarios = [];
+    var IdBeneficiarios = 1;
+    var beneficiarioEditandoId = null;
+
     $('#CPF').on('input', function () {
         var value = $(this).val();
         value = value.replace(/\D/g, '');
@@ -59,10 +63,6 @@
         });
     });
 
-    var beneficiarios = [];
-    var IdBeneficiarios = 1;
-    var beneficiarioEditandoId = null;
-
     window.salvarBeneficiario = function () {
         var cpf = $('#cpfBeneficiario').val();
         var nome = $('#nomeBeneficiario').val();
@@ -90,7 +90,6 @@
                 nome: nome
             };
             beneficiarios.push(beneficiario);
-
             var itemLista = $('<div class="d-flex justify-content-between align-items-center p-2 border text-start" id="' + itemId + '" style="padding -bottom: 10px;"></div>');
             itemLista.append($('<span class="col-md-4 cpf">' + cpf + '</span>'));
             itemLista.append($('<span class="col-md-4 nome">' + nome + '</span>'));
@@ -115,7 +114,7 @@
 
     window.excluirBeneficiario = function (itemId) {
         $('#' + itemId).remove();
-        beneficiarios = beneficiarios.filter(b => b.id !== itemId);
+        beneficiarios = beneficiarios.filter(b => b.id !== parseInt(itemId));
     }
 });
 

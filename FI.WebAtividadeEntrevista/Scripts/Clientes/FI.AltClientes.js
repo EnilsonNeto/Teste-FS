@@ -1,22 +1,7 @@
 ﻿var beneficiariosArray = [];
-
 $(document).ready(function () {
-    $.ajax({
-        url: '/Cliente/ListarBeneficiarios',
-        type: 'GET',
-        data: { idCliente: obj.Id },
-        success: function (response) {
-            if (response.success) {
-                beneficiariosArray = response.data;
-                atualizarListaBeneficiarios(response.data);
-            } else {
-                alert('Erro: ' + response.message);
-            }
-        },
-        error: function () {
-            alert('Erro ao tentar buscar os beneficiários.');
-        }
-    });
+    var beneficiarioAtual = null;
+    buscarBeneficiarios();
 
     $('#CPF').on('input', function () {
         var value = $(this).val();
@@ -52,7 +37,7 @@ $(document).ready(function () {
                 data: { id: id },
                 success: function (response) {
                     ModalDialog('Sucesso!', 'Beneficiário removido com sucesso.');
-                    location.reload();
+                    buscarBeneficiarios();
                 },
                 error: function (xhr) {
                     alert('Erro: ' + xhr.responseText);
@@ -61,7 +46,6 @@ $(document).ready(function () {
         }
     };
 
-    var beneficiarioAtual = null;
     window.alterarBeneficiarioCadastrado = function (id) {
         beneficiarioAtual = beneficiariosArray.find(b => b.Id === id);
 
@@ -89,7 +73,8 @@ $(document).ready(function () {
                 data: dadosBeneficiario,
                 success: function (response) {
                     ModalDialog('Sucesso!', 'O beneficiario foi alterado.');
-                    location.reload();
+                    $("#formCadastroBeneficiario")[0].reset(); 
+                    buscarBeneficiarios();
                 },
                 error: function (xhr) {
                     alert('Erro: ' + xhr.responseText);
@@ -102,7 +87,7 @@ $(document).ready(function () {
                 data: dadosBeneficiario,
                 success: function (response) {
                     ModalDialog('Sucesso!', 'O beneficiário foi adicionado.');
-                    location.reload();
+                    buscarBeneficiarios();
                 },
                 error: function (xhr) {
                     alert('Erro: ' + xhr.responseText);
@@ -165,6 +150,25 @@ $(document).ready(function () {
     })
     
 })
+
+function buscarBeneficiarios() {
+    $.ajax({
+        url: '/Cliente/ListarBeneficiarios',
+        type: 'GET',
+        data: { idCliente: obj.Id },
+        success: function (response) {
+            if (response.success) {
+                beneficiariosArray = response.data;
+                atualizarListaBeneficiarios(response.data);
+            } else {
+                alert('Erro: ' + response.message);
+            }
+        },
+        error: function () {
+            alert('Erro ao tentar buscar os beneficiários.');
+        }
+    });
+}
 
 function formatarCPF(cpf) {
     cpf = cpf.replace(/\D/g, '');
