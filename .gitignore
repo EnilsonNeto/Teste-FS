@@ -1,0 +1,52 @@
+# Ignore arquivos e pastas compilados
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+
+# Ignore pacotes do NuGet
+packages/
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore configurações de IDE
+.vscode/
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore arquivos de build
+_build/
+_buildscripts/
+_buildlogs/
+
+# Ignore arquivos temporários
+*.tmp
+*.temp
+*.bak
+
+# Ignore arquivos do banco de dados local
+*.mdf
+*.ldf
+*.ndf
+
+# Ignore o arquivo de configuração do IIS Express
+.vs\config\applicationhost.config
+
+# Ignore logs e dados temporários do SQL Server
+sql/*.log
+sql/*.data
+sql/*.ndf
+
+# Ignore arquivos de debug
+*.log
